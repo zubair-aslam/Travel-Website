@@ -1,0 +1,489 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* ################## html element Styling ########## */
+
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+ul li{
+    list-style-type: none;
+}
+a{
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+p li{
+    font-size: 1.6rem;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+}
+h1 h2 h3{
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+    font-weight: 500;
+
+}
+
+
+
+/* ################## html Utility Styling ################# */
+
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+.lg-heading{
+    font-size: 3.5rem;
+}
+.md-heading{
+   font-size:  2.2rem;
+}
+.bg-dark
+{
+    background-color: #263238;
+}
+
+.text-red {
+    color: #e63946;
+}
+.text-light{
+    color: #f4f4f4;
+}
+.text-black{
+    color: #333;
+}
+.text-gray{
+    color: #666666;
+}
+
+.btn{
+    display: inline-block;
+    padding: 0.8em 1.5em;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0.5em;
+}
+.btn-primary{
+    background-color: #fff;
+    border-radius: 20px;
+}
+.btn-second{
+    border: 1px solid red;
+    border-radius: 5rem;
+    padding: 0.8rem 1.6rem;
+    text-transform: uppercase;
+}
+
+.btn:hover{
+    background-color: lightgray;
+}
+
+/* ######## html header styling ####### */
+
+.header{
+    position: relative;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) , url('../image/header-image.jpg ');
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.navbar{
+    padding: 1rem;
+}
+.navbar .logo{
+    float: left;
+    margin-top: 1rem;
+}
+.navbar .nav-items{
+    float: right;
+    margin-top: 0.5rem;
+    
+}
+.navbar .nav-item{
+    display: inline-block;
+  text-transform: uppercase;
+    padding: 1rem;
+}
+.navbar a:link, a:visited
+{
+    color: #fff;
+}
+.header-content a{
+    color: red;
+}
+.navbar  a:hover{
+    text-decoration: underline;
+}
+.navbar::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* ############## Header content styling ########## */
+.header-content{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2));
+
+}
+.header-content h1 {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.header-content p{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+
+/* ####################################### Section showcase Styling ############################### */
+
+.showcase{
+    background-color: #ddd;
+    padding: 10rem 0;
+}
+.row{
+    height: 350px;
+    box-shadow: 0px 0px 20px 0px #aaaaaa2d;
+
+}
+.row1 .img-box, .row2 .text-box{
+    float: left;
+    width: 50%;
+}
+.row2 .img-box, .row1 .text-box{
+    float: right;
+    width: 50%;
+}
+.row1{
+    margin-bottom: 10rem;
+}
+.row .img-box{
+    height: 100%;
+}
+.row .text-box{
+    background-color: #f4f4f4;
+    height: 100%;
+    padding: 3rem;
+}
+
+.row .img-box img{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ################### Feature Section Styling ############### */
+
+
+  .features{
+    padding: 10rem 2rem;
+  }
+  .box {
+    float: left;
+    width: 33.33%; /* three boxes (use 25% for four, and 50% for two, etc) */
+    padding: 4rem; /* if you want space between the images */
+    text-align: center;
+    font-size: 16px;
+  }
+  .box-wrapper{
+        box-shadow: 5px 5px 10px rgba(102, 102, 102, 0.521);
+  }
+  .box-wrapper::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+  .box1 ,.box3{
+    background-color: #263238;
+    color: white;
+  }
+  .box2{
+    background: linear-gradient(25deg, rgba(131,58,180,1), #d64c7f, #ee4758 50%);
+    color: white;
+  }
+
+  /* ################################### Footer Styling ######################### */
+
+  .footer{
+        background-color: #263238;
+        color: white;
+        padding: 2rem;
+        text-align: center;
+  }
+  .social-media-links i{
+    margin: 2rem;
+  }
+
+  /* #################### About Us Styling################### */
+
+  .about{
+    padding: 5rem 0rem;
+  }
+  .about-heading::after{
+    content: "";
+    display: block;
+    border: 3px solid #e63946;
+  }
+
+  .about-wrapper{
+    text-align: center;
+  }
+  .about-wrapper .left{
+    float: left;
+    width: 50%;
+  }
+  .about-wrapper .right{
+    float: right;
+    width: 50%;
+  }
+  .about-wrapper::after{
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  .about-wrapper li::before{
+    content: "\2713";
+    color: #e63946;
+    font-weight: bold;
+    padding-right: 1rem;
+  }
+  /* ############### about detail styling########### */
+
+  .about-detail{
+    margin-top: 10rem;
+  }
+  .about-detail1{
+    float: left;
+    width: 25%;
+  }
+  .about-detail2{
+    float: left;
+    width: 25%;
+  }
+  .about-detail3{
+    float: left;
+    width: 25%;
+  }
+  .about-detail4{
+    float: left;
+    width: 25%;
+  }
+  .about-detail::after{
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .about-footer{
+    background-color: #e63946;
+    margin-top: 3rem;
+    padding: 2rem 0rem;
+    padding-left: 1rem;
+    color: white;
+  }
+  .footer1{
+          float: left;
+  }
+  .banner{
+    float: right;
+  }
+  .about-footer::after
+  {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .about-footer a{
+    border: 4px solid white;
+    padding: 1rem 6rem;
+    margin-right: 1rem;
+  }
+
+  /* ################## Contact Page Styling################## */
+  .contact-form{
+    padding: 5rem 0rem;
+  font-size: 16px;
+  background-color: #f7f7f7;
+  }
+
+  .company-address{
+    padding: 1rem 1rem;
+    width: 49%;
+    float: left;
+    background-color: white;
+    object-fit: contain
+  
+  }
+  .form{
+    width: 49%;
+    float: right;
+    background-color: white;
+    padding: 1rem 1rem;
+  }
+  .form-wrapper::after{
+    content: "";
+    display: block;
+    clear: both;
+  }
+.contact-us::after{
+  content: "";
+  display: block;
+  border: 3px solid #e63946;
+}
+.form input{
+  width: 100%;
+  padding: 1rem;
+  margin: 0.5rem;
+}
+.form textarea{
+  width: 100%;
+  margin: 0.5rem;
+}
+.form a{
+  background-color: #e63946;
+  color: white;
+  padding: 1rem 3rem;
+  margin-left: 1rem;
+  
+}
+.form-wrapper .company-address img{
+  max-width: 90%;
+  min-height: 40rem;
+  object-fit: cover;
+  object-position: right;
+}
+
+/* ################### Media Queries ############ */
+@media(max-width : 500px){
+  html{
+    font-size: 8px;
+  }
+  .navbar .nav-items , .navbar .logo {
+    float: none;
+    text-align: center;
+    width: 100%;
+  
+  }
+  .row{
+    height: auto;
+    width: 100%;
+  }
+  .row .image-box,
+  .row .text-box{
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  .features .box{
+    float: none;
+    width: 100%;
+    text-align: center;
+    box-shadow: 5px 5px 10px rgba(102, 102, 102, 0.521);
+
+  }
+  .features .box2,
+  .features .box3{
+    margin-top: 7rem;
+  }
+  .box-wrapper{
+    box-shadow: none;
+  }
+  .footer1 .banner{
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  .form-wrapper .company-address{
+    float: none;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10rem;
+  }
+  .form-wrapper .form{
+    float: none;
+    width: 100%;
+    height: auto;
+  }
+}
+@media (min-width: 501px) and (max-width:768px){
+
+  html{
+    font-size: 8px;
+  }
+  p{
+    font-size: 1.8rem;
+  }
+  .navbar .nav-items , .navbar .logo {
+    float: none;
+    text-align: center;
+    width: 100%;
+  
+  }
+  .row{
+    height: auto;
+    width: 100%;
+  }
+  .row .image-box,
+  .row .text-box{
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  .features .box{
+    float: none;
+    width: 100%;
+    text-align: center;
+    box-shadow: 5px 5px 10px rgba(102, 102, 102, 0.521);
+
+  }
+  .features .box2,
+  .features .box3{
+    margin-top: 7rem;
+  }
+  .box-wrapper{
+    box-shadow: none;
+  }
+  .footer1 .banner{
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  .form-wrapper .company-address{
+    float: none;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10rem;
+  }
+  .form-wrapper .form{
+    float: none;
+    width: 100%;
+    height: auto;
+  }
+}
+@media(min-width:769px) and (max-width:1200px){
+  html{
+    font-size: 56.25%;
+  }
+}
+@media(orientation: landscape)  and (max-height:500px)
+{
+  .header{
+    height: 90vmax;
+  }
+}
